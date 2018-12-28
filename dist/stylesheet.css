@@ -57,7 +57,7 @@ html body .section h2 {
 html body .section .box {
   width: 30%;
   margin: 0px 35%;
-  min-width: 400px;
+  min-width: 350px;
 }
 @media screen and (max-width: 680px) {
   html body .section .box {
@@ -69,6 +69,12 @@ html body .section .large-box {
   width: 50%;
   margin: 0px 25%;
   text-align: center;
+}
+@media screen and (max-width: 680px) {
+  html body .section .large-box {
+    width: 80%;
+    margin: 0px 5%;
+  }
 }
 html body .welcome h1,
 html body .elfestival h1,
