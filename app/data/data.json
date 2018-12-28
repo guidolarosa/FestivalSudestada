@@ -1,0 +1,172 @@
+{
+    "site_data":
+    {
+        "title":"FESTIVAL SUDESTADA DE DIBUJO E ILUSTRACIÓN",
+        "date":
+        [
+            "26 ENERO 2019",
+            "CENTRO CULTURAL RECOLETA"
+        ],
+        "mail":"info@festivalsudestada.com"
+    },
+    "section_festival":
+    {
+        "title":"EL FESTIVAL",
+        "text":[
+            "Nacido en 2014 como feria colectiva de dibujo e ilustración en Casa Florida Galería, y producido por Musaraña Productora, el Festival Sudestada de Dibujo e Ilustración abre una ventanita en la ciudad de Buenos Aires para generar nuevos puentes y espacios dentro de la pujante industria cultural del dibujo y la ilustración.",
+            "Festival Sudestada quiere ser un punto de encuentro anual entre profesionales, estudiantes y el público en general con el mundo de la ilustración, el dibujo y las artes gráficas, así como también convertirse en un foro profesional para la difusión y el intercambio.",
+            "Siendo conscientes del alto nivel profesional e histórico de nuestra región, vemos en los ilustradores y dibujantes actuales un gran desarrollo profesional, muchísimo talento y empuje y estamos atentos a una nueva ola, un gran viento, una fuerza artística que busca y precisa de canales para instalarse como una industria cultural robusta, sana y permanente."
+        ]
+    },
+    "section_cronograma":
+    {
+        "title":"CRONOGRAMA",
+        "events":
+        [
+            {
+                "time":"15 hs",
+                "details":
+                [
+                    "Apertura del Festival y de la Feria de publicaciones de ilustración, historietas, diseñoliteratura infanto-juvenil y fanzines de autores independientes (Patio de los Naranjos)"
+                ]
+            },
+            {
+                "time":"15:30 hs",
+                "details":
+                [
+                    "Conferencia \"Historieta Brasilera Actual\" ",
+                    "Rafael Coutinho (Microcine)"
+                ]
+            },
+            {
+                "time":"15:30 hs",
+                "details":
+                [
+                    "Taller de historietas para niñ@s de 7 a 11 años",
+                    "por Banda Dibujada"
+                ]
+            },
+            {
+                "time":"17 hs",
+                "details":
+                [
+                    "Conferencia \"El artista por sí mismo\"",
+                    "Mariana Ruiz Johnson (Microcine)"
+                ]
+            },
+            {
+                "time":"17:45 hs",
+                "details":
+                [
+                    "Mesa redonda con Editores. Debate sobre el estado actual de la industria (Patio de los Naranjos)"
+                ]
+            },
+            {
+                "time":"18:30 hs",
+                "details":
+                [
+                    "Conferencia \"El artista por sí mismo\"",
+                    "Cristian Turdera (Microcine)"
+                ]
+            },
+            {
+                "time":"19:15 hs",
+                "details":
+                [
+                    "Mesa redonda con los artistas de la exposición",
+                    "\"Estampar el Mundo\" (Patio de los Naranjos)"
+                ]
+            },
+            {
+                "time":"20 hs",
+                "details":
+                [
+                    "Conferencia \"El artista por sí mismo\"",
+                    "Chicks on Comics (Microcine)"
+                ]
+            }
+
+        ]
+    },
+    "section_invitades":
+    {
+        "title":"INVITADES",
+        "text": [
+            "En ésta segunda edición de Festival Sudestada contamos con la presencia de cuatro invitades de lujo.",
+            "A lo largo de la jornada cada invitado haría una presentación de 45 minutos en la que contarán al público cómo llevan a cabo una tarea de su ámbito profesional basándose en casos concretos. Luego de cada presentación habrá 30 muntos para las preguntas del público.",
+            "La entrada es libre y gratuita"
+        ],
+        "invitades":[
+            {
+                "name":"RAFAEL COUTINHO",
+                "type":"Conferencia",
+                "title":"HISTORIA BRASILEÑA ACTUAL",
+                "time":"15:30 hs",
+                "place":"MICROCINE"
+            },
+            {
+                "name":"MARIANA RUIZ JOHNSON",
+                "type":"Conferencia",
+                "time":"17 hs",
+                "place":"MICROCINE"
+            },
+            {
+                "name":"CRISTIAN TURDERA",
+                "type":"Conferencia",
+                "time":"18:30 hs",
+                "place":"MICROCINE"
+            },
+            {
+                "name":"CHICKS ON COMICS",
+                "type":"Conferencia",
+                "time":"20 hs",
+                "place":"MICROCINE"
+            }
+        ]
+    },
+    "section_feria":
+    {
+        "title":"FERIA",
+        "text":
+        [
+            "Podrás encontrar en esta feria de editoriales muchos de los sellos más importantes del país que trabajan en torno al dibujo y la ilustración. Literatura infanto juvenil, clásicos ilustrados, humor gráfico e historieta.",
+            "Calibroscopio, AH Pípala, Flamboyant, Zorro Rojo, Arte a Babor, Limonero, Niño, Ojoreja, Pequeño Editor, Periplo, Muchas Nueces, Editorial Municipal de Rosario, Festival Furioso, Galería, Hotel de las Ideas, Loco Rabia, Maten al mensajero, Moebius, Musaraña Editora, Moria Galería, Tren en movimiento, Wai Comics, La Pinta, Barro, Estudio Maffia, Proyecto Piraña y más."
+        ]
+    },
+    "section_exposiciones":
+    {
+        "title":"EXPOSICIONES",
+        "exposiciones":
+        [
+            {
+                "title":"ESTAMPAR EL MUNDO",
+                "text":"La ilustración abre camino, sale del papel y avanza sobre nuevas superficies. Textiles, empapelados y hasta objetos son los nuevos soportes y el protagonista es el pattern ilustrado. Nueve ilustradores argentinos empapelan las columnas de las Salas presentando este nuevo universo del pattern en técnicas, estilos, temáticas y escalas diversas.",
+                "subtitle":"ARTISTAS",
+                "artist_list":"Juliana Pedemonte, Sol Linero, Gabriela Regina, Laura Varsky, Ángela Corti, Ana Sanfelippo, Marcos Farina, Maria Elina Mendez y Mariana Pupé Pereyra.",
+                "footer":"CURADURÍA Festival Sudestada"
+            },
+            {
+                "title":"PUENTE - HISTORIETA EXPERIMENTAL DE ARGENTINA Y BRASIL",
+                "text":"En la historieta contemporánea existen nuevxs actores que empujan los límites establecidos y quiebran la viñeta tradicional con búsquedas plásticas y narrativas. Esta exposición propone un puente desde y hacia la historieta, y entre los diversos lenguajes de experimentación gráfica de Argentina y Brasil, dos vecinos en plena expansión creativa, con infinitos puntos de conexión, que la mayoría de las veces apenas se tocan. Un puente para salvar obstáculos de comunicación entre artistas de nuestra vecindad cultural.",
+                "subtitle":"ARTISTAS",
+                "artist_list":"Mateus Acioli, Adonis, Julia Balthazar, Julia Barata, Muriel Bellini, Denny Chang, El Waibe, Juan Narowe, No tan parecidos, Puiupo, Iván Riskin, Un Faulduo.",
+                "footer":"CURADORES Rafael Coutinho y Alejandro Bidegaray."
+            }
+        ]
+    },
+    "footer":
+    {
+        "footer_images":
+        {
+            "background":"img/footer/footer_back.png",
+            "logos":
+            {
+                "musarana_logo":"img/footer/logo_musa.png",
+                "mecenazgo_cultural_logo":"img/footer/logo_mece.png",
+                "ccr_logo":"img/footer/logo_ccr.png",
+                "cynar_logo":"img/footer/logo_cynar.png"
+            }
+            
+        }
+    }
+}

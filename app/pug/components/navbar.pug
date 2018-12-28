@@ -1,0 +1,6 @@
+navbar
+    .navbar-container
+        ul
+            each val in section_titles
+                li
+                    a(href="#" go=val.replace(/\s/g, "").toLowerCase())=val

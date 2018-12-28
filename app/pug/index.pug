@@ -1,0 +1,56 @@
+- var section_titles = [section_festival.title, section_cronograma.title,section_invitades.title,section_feria.title,section_exposiciones.title]
+
+html
+  head
+    title=site_data.title
+    include components/header.pug
+  body
+    include components/navbar.pug
+    main
+      .section.welcome
+        .box
+          h1=site_data.title
+          h2
+            each val in site_data.date
+              p=val
+      .section.elfestival
+        .box
+          h2=section_festival.title
+          each val in section_festival.text
+            p=val
+      .section.cronograma
+        .box
+          h2=section_cronograma.title
+          each val in section_cronograma.events
+            .event-container
+              h3.time=val.time
+              each inVal in val.details
+                p.details=inVal
+      .section.invitades
+        .box
+          h2=section_invitades.title
+          each val in section_invitades.text
+            p=val
+          each val in section_invitades.invitades
+            .invitade-container
+              h3.name=val.name
+              h5.type=val.type
+              if (val.title)
+                h3.title=val.title
+              span.time_place=val.time + ' ' + val.place
+      .section.feria
+        .box
+          h2=section_feria.title
+          each val in section_feria.text
+            p=val
+      .section.exposiciones
+        .box
+          h2=section_exposiciones.title
+          each val in section_exposiciones.exposiciones
+            h3=val.title
+            p=val.text
+            h4=val.subtitle
+            p=val.artist_list
+            p=val.footer
+    include components/footer.pug
+    script(src="main.js")

@@ -1,0 +1,142 @@
+@import "imports/palette"
+@import "imports/globals"
+@import "imports/fonts"
+
+*
+	box-sizing border-box
+	margin 0px
+
+html
+	body
+		font-family 'FuturaBook'
+		color black
+		margin 0
+		navbar
+			.navbar-container
+				width 15vw
+				background-color main-red
+				padding 10px 10px
+				position fixed
+				right 0
+				top 30%
+				ul
+					padding 10px
+					li
+						list-style none
+						a
+							display inline-block
+							text-decoration none
+							color white
+							margin 5px 0px
+							font-size 0.8em
+							transition ease-in-out 0.2s all
+							&:hover
+								opacity 0.7
+		.section
+			padding 30px 0px 70px
+			p
+				text-align justify
+			h2
+				text-align center
+				margin-bottom 30px
+			.box
+				width 30%
+				margin 0px 35%
+				min-width 400px
+				@media screen and (max-width 680px)
+					width 80%
+					margin 0px 5%
+			.large-box
+				width 50%
+				margin 0px 25%
+				text-align center
+		.welcome, .elfestival
+			h1, h2, p
+				color main-red
+			h1
+				text-align center
+				font-family 'FuturaBookLT'
+				font-weight 600
+				font-size 3.5em
+				margin-top 15vh
+				margin-bottom 50px
+		.welcome
+			height 100vh
+			p
+				text-align center
+				font-size 1em
+		.elfestival
+			h2
+				margin-bottom 20px
+		.cronograma
+			background-color light-blue
+			h2
+				color dark-blue
+			.event-container
+				margin-bottom 20px
+				.time
+					color main-yellow
+					font-size 2em
+				.details
+					color white
+					font-size 0.9em
+		.invitades
+			background-color main-red
+			p
+				margin-bottom 25px
+				font-size 0.9em
+			h2, p, .title
+				color white
+			.invitade-container
+				.name
+					color main-yellow
+					font-size 2em
+				.type
+					color black
+		.feria
+			background-color dark-blue //TEMP
+			color white
+		.exposiciones
+			color main-red
+		footer
+			background-color main-purple //TEMP
+			color white
+			.section
+				padding 0px
+				.top-footer-section
+					background-image url("img/footer/footer_back.png")
+					background-color main-purple
+					background-blend-mode multiply
+					padding 30px 0px 30px
+					.large-box
+						h1
+							margin-bottom 20px
+						p
+							text-align center
+						a
+							display inline-block
+							margin-top 20px
+							color white
+							text-decoration none
+							font-weight 400
+							transition 0.2s ease-in-out all
+							&:hover
+								opacity 0.8
+				.bottom-footer-section
+					margin 0px 20px
+					.large-box
+						display flex
+						flex-direction row
+						justify-content space-between
+						align-items center
+						.footer-logo
+							width 100px
+							height 100px
+							background-size 100%
+							background-position center
+							background-repeat no-repeat
+							background-blend-mode screen
+							background-color main-purple
+						
+
+			
