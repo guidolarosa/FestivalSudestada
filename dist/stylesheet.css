@@ -1,21 +1,24 @@
 @font-face {
-  font-family: FuturaBook;
-  src: url("fonts/Futura-Book.ttf") format('truetype');
+  font-family: Futura;
+  src: url("fonts/futura_light_bt.ttf") format('truetype');
+  src: url("fonts/futura_light_bt-webfont.woff") format('woff');
+  src: url("fonts/futura_light_bt-webfont.woff2") format('woff2');
 }
 @font-face {
-  font-family: FuturaBookBD;
-  src: url("fonts/Futura-Book-BD.ttf") format('truetype');
+  font-family: FuturaHeavy;
+  src: url("fonts/futura_heavy.ttf") format('truetype');
 }
 @font-face {
-  font-family: FuturaBookLT;
-  src: url("fonts/Futura-Book-LT.ttf") format('truetype');
+  font-family: Neutraface;
+  src: url("fonts/NeutraTextTF-DemSC.otf") format("opentype");
+  src: url("fonts/NeutraTextTF-DemSC.woff") format("woff");
 }
 * {
   box-sizing: border-box;
   margin: 0px;
 }
 html body {
-  font-family: 'FuturaBook';
+  font-family: 'Futura';
   color: #000;
   margin: 0;
 }
@@ -50,13 +53,15 @@ html body .section {
 html body .section p {
   text-align: justify;
 }
-html body .section h2 {
+html body .section .section-title {
+  font-size: 2em;
   text-align: center;
   margin-bottom: 30px;
+  font-family: 'FuturaHeavy';
 }
 html body .section .box {
-  width: 30%;
-  margin: 0px 35%;
+  width: 40%;
+  margin: 0px 30%;
   min-width: 350px;
 }
 @media screen and (max-width: 680px) {
@@ -87,11 +92,13 @@ html body .elfestival p {
 html body .welcome h1,
 html body .elfestival h1 {
   text-align: center;
-  font-family: 'FuturaBookLT';
+  font-family: 'FuturaHeavy';
+  line-height: 1em;
   font-weight: 600;
   font-size: 3.5em;
   margin-top: 15vh;
   margin-bottom: 50px;
+  overflow: visible;
 }
 html body .welcome {
   height: 100vh;
@@ -102,6 +109,9 @@ html body .welcome p {
 }
 html body .elfestival h2 {
   margin-bottom: 20px;
+}
+html body .elfestival p {
+  margin-bottom: 30px;
 }
 html body .cronograma {
   background-color: #36b1f4;
@@ -115,10 +125,11 @@ html body .cronograma .event-container {
 html body .cronograma .event-container .time {
   color: #ffe400;
   font-size: 2em;
+  font-family: 'FuturaHeavy';
 }
 html body .cronograma .event-container .details {
   color: #fff;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 html body .invitades {
   background-color: #fc3540;
@@ -132,19 +143,42 @@ html body .invitades p,
 html body .invitades .title {
   color: #fff;
 }
+html body .invitades .invitade-container {
+  margin-bottom: 20px;
+}
 html body .invitades .invitade-container .name {
   color: #ffe400;
   font-size: 2em;
+  font-family: "FuturaHeavy";
 }
 html body .invitades .invitade-container .type {
   color: #000;
+}
+html body .invitades .invitade-container .title {
+  font-family: "FuturaHeavy";
+  font-size: 1.5em;
+}
+html body .invitades .invitade-container .time_place {
+  display: inline-block;
+  margin-top: 5px;
+  color: #fff;
 }
 html body .feria {
   background-color: #021c91;
   color: #fff;
 }
+html body .feria .box p {
+  margin-bottom: 25px;
+}
 html body .exposiciones {
   color: #fc3540;
+}
+html body .exposiciones .box h3,
+html body .exposiciones .box h4 {
+  font-family: "FuturaHeavy";
+}
+html body .exposiciones .box p {
+  margin-bottom: 25px;
 }
 html body footer {
   background-color: #32006f;
@@ -159,8 +193,10 @@ html body footer .section .top-footer-section {
   background-blend-mode: multiply;
   padding: 30px 0px 30px;
 }
-html body footer .section .top-footer-section .large-box h1 {
+html body footer .section .top-footer-section .large-box .section-title {
   margin-bottom: 20px;
+  font-family: "FuturaHeavy";
+  font-size: 1.5em;
 }
 html body footer .section .top-footer-section .large-box p {
   text-align: center;
@@ -170,7 +206,8 @@ html body footer .section .top-footer-section .large-box a {
   margin-top: 20px;
   color: #fff;
   text-decoration: none;
-  font-weight: 400;
+  font-family: 'FuturaHeavy';
+  font-size: 1.5em;
   transition: 0.2s ease-in-out all;
 }
 html body footer .section .top-footer-section .large-box a:hover {
@@ -185,7 +222,7 @@ html body footer .section .bottom-footer-section .large-box {
   justify-content: space-between;
   align-items: center;
 }
-html body footer .section .bottom-footer-section .large-box .footer-logo {
+html body footer .section .bottom-footer-section .large-box a .footer-logo {
   width: 100px;
   height: 100px;
   background-size: 100%;
@@ -193,4 +230,8 @@ html body footer .section .bottom-footer-section .large-box .footer-logo {
   background-repeat: no-repeat;
   background-blend-mode: screen;
   background-color: #32006f;
+  transition: ease-in-out opacity 0.2s;
+}
+html body footer .section .bottom-footer-section .large-box a .footer-logo:hover {
+  opacity: 0.8;
 }

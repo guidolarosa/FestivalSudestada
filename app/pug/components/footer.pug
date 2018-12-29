@@ -2,11 +2,12 @@ footer
     .section
         .top-footer-section
             .large-box
-                h1=site_data.title
+                h1.section-title=site_data.title
                 each val in site_data.date
                     p=val
                 a(href="mailto:" + site_data.mail)=site_data.mail
         .bottom-footer-section
             .large-box
                 each val in footer.footer_images.logos
-                    .footer-logo(style="background-image: url('" + val + "')")
+                    a(href=val.link)
+                        .footer-logo(style="background-image: url('" + val.logo + "')")

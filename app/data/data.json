@@ -161,12 +161,27 @@
             "background":"img/footer/footer_back.png",
             "logos":
             {
-                "musarana_logo":"img/footer/logo_musa.png",
-                "mecenazgo_cultural_logo":"img/footer/logo_mece.png",
-                "ccr_logo":"img/footer/logo_ccr.png",
-                "cynar_logo":"img/footer/logo_cynar.png"
+                "musarana":
+                {
+                    "logo":"img/footer/logo_musa.png",
+                    "link":"http://xn--musaraalibros-nkb.com/index.html"
+                },
+                "mecenazgo":
+                {
+                    "logo":"img/footer/logo_mece.png",
+                    "link":"http://www.buenosaires.gob.ar/cultura/impulsocultural/mecenazgo"
+                },
+                "ccr":
+                {
+                    "logo":"img/footer/logo_ccr.png",
+                    "link":"http://www.centroculturalrecoleta.org/"
+                },
+                "cynar":
+                {
+                    "logo":"img/footer/logo_cynar.png",
+                    "link":"https://www.facebook.com/CynarArg/"
+                }
             }
-            
         }
     }
 }

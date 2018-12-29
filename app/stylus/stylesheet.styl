@@ -8,7 +8,7 @@
 
 html
 	body
-		font-family 'FuturaBook'
+		font-family 'Futura'
 		color black
 		margin 0
 		navbar
@@ -36,12 +36,14 @@ html
 			padding 30px 0px 70px
 			p
 				text-align justify
-			h2
+			.section-title
+				font-size 2em
 				text-align center
 				margin-bottom 30px
+				font-family 'FuturaHeavy'
 			.box
-				width 30%
-				margin 0px 35%
+				width 40%
+				margin 0px 30%
 				min-width 350px
 				@media screen and (max-width 680px)
 					width 80%
@@ -58,11 +60,13 @@ html
 				color main-red
 			h1
 				text-align center
-				font-family 'FuturaBookLT'
+				font-family 'FuturaHeavy'
+				line-height 1em
 				font-weight 600
 				font-size 3.5em
 				margin-top 15vh
 				margin-bottom 50px
+				overflow visible
 		.welcome
 			height 100vh
 			p
@@ -71,6 +75,8 @@ html
 		.elfestival
 			h2
 				margin-bottom 20px
+			p
+				margin-bottom 30px
 		.cronograma
 			background-color light-blue
 			h2
@@ -80,9 +86,10 @@ html
 				.time
 					color main-yellow
 					font-size 2em
+					font-family 'FuturaHeavy'
 				.details
 					color white
-					font-size 0.9em
+					font-size 1em
 		.invitades
 			background-color main-red
 			p
@@ -91,16 +98,33 @@ html
 			h2, p, .title
 				color white
 			.invitade-container
+				margin-bottom 20px
 				.name
 					color main-yellow
 					font-size 2em
+					font-family "FuturaHeavy"
 				.type
 					color black
+				.title
+					font-family "FuturaHeavy"
+					font-size 1.5em
+				.time_place
+					display inline-block
+					margin-top 5px
+					color white
 		.feria
 			background-color dark-blue //TEMP
 			color white
+			.box
+				p
+					margin-bottom 25px
 		.exposiciones
 			color main-red
+			.box
+				h3, h4
+					font-family "FuturaHeavy"
+				p
+					margin-bottom 25px
 		footer
 			background-color main-purple //TEMP
 			color white
@@ -112,8 +136,10 @@ html
 					background-blend-mode multiply
 					padding 30px 0px 30px
 					.large-box
-						h1
+						.section-title
 							margin-bottom 20px
+							font-family "FuturaHeavy"
+							font-size 1.5em
 						p
 							text-align center
 						a
@@ -121,7 +147,8 @@ html
 							margin-top 20px
 							color white
 							text-decoration none
-							font-weight 400
+							font-family 'FuturaHeavy'
+							font-size 1.5em
 							transition 0.2s ease-in-out all
 							&:hover
 								opacity 0.8
@@ -132,14 +159,15 @@ html
 						flex-direction row
 						justify-content space-between
 						align-items center
-						.footer-logo
-							width 100px
-							height 100px
-							background-size 100%
-							background-position center
-							background-repeat no-repeat
-							background-blend-mode screen
-							background-color main-purple
-						
-
-			
+						a
+							.footer-logo
+								width 100px
+								height 100px
+								background-size 100%
+								background-position center
+								background-repeat no-repeat
+								background-blend-mode screen
+								background-color main-purple
+								transition ease-in-out opacity 0.2s
+								&:hover
+									opacity 0.8
