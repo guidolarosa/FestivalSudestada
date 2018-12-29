@@ -5,41 +5,43 @@ html
     title=site_data.title
     include components/header.pug
   body
+    .loading-overlay
+      p CARGANDO...
     include components/navbar.pug
     main
       .section.welcome
-        .top-illus
-        .left-illus
-        .right-illus
+        .top-illus(data-aos="fade" data-aos-delay="300")
+        .left-illus(data-aos="fade" data-aos-delay="500")
+        .right-illus(data-aos="fade" data-aos-delay="800")
         .box
-          h1=site_data.title
+          h1(data-aos="zoom-in")=site_data.title
           h2
             each val in site_data.date
-              p=val
+              p(data-aos="fade-up")=val
       .section.elfestival
         .box
-          h2.section-title=section_festival.title
+          h2.section-title(data-aos="fade-up")=section_festival.title
           each val in section_festival.text
-            p=val
+            p(data-aos="fade-up")=val
       .section.cronograma
-        .left-illus
-        .right-illus
+        .left-illus(data-aos="fade" data-aos-delay="500")
+        .right-illus(data-aos="fade" data-aos-delay="1000")
         .box
-          h2.section-title=section_cronograma.title
+          h2.section-title(data-aos="fade-up")=section_cronograma.title
           each val in section_cronograma.events
             .event-container
-              h3.time=val.time
+              h3.time(data-aos="fade-up")=val.time
               each inVal in val.details
-                p.details=inVal
+                p.details(data-aos="fade-up")=inVal
       .section.invitades
-        .left-illus
-        .right-illus
-        .box
+        .left-illus(data-aos="fade" data-aos-delay="500")
+        .right-illus(data-aos="fade" data-aos-delay="1000")
+        .box(data-aos="fade-up")
           h2.section-title=section_invitades.title
           each val in section_invitades.text
             p=val
           each val in section_invitades.invitades
-            .invitade-container
+            .invitade-container(data-aos="fade-up")
               h3.name=val.name
               h5.type=val.type
               if (val.title)
@@ -47,19 +49,19 @@ html
               span.time_place=val.time + ' ' + val.place
       .section.feria
         .box
-          h2.section-title=section_feria.title + ' SUDESTADA'
+          h2.section-title(data-aos="fade-up")=section_feria.title + ' SUDESTADA'
           each val in section_feria.text
-            p=val
+            p(data-aos="fade-up")=val
       .section.exposiciones
-        .left-illus
-        .right-illus
+        .left-illus(data-aos="fade" data-aos-delay="500")
+        .right-illus(data-aos="fade" data-aos-delay="1000")
         .box
-          h2.section-title=section_exposiciones.title
+          h2.section-title(data-aos="fade-up")=section_exposiciones.title
           each val in section_exposiciones.exposiciones
-            h3=val.title
-            p=val.text
-            h4=val.subtitle
-            p=val.artist_list
-            p=val.footer
+            h3(data-aos="fade-up")=val.title
+            p(data-aos="fade-up")=val.text
+            h4(data-aos="fade-up")=val.subtitle
+            p(data-aos="fade-up")=val.artist_list
+            p(data-aos="fade-up")=val.footer
     include components/footer.pug
     script(src="main.js")

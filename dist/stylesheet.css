@@ -23,6 +23,29 @@ html body {
   margin: 0;
   overflow-x: hidden;
 }
+html body .loading-overlay {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  opacity: 1;
+  transition: ease-in-out 0.5s opacity;
+  background-color: #fc3540;
+}
+html body .loading-overlay p {
+  color: #fff;
+  text-align: center;
+  font-family: 'FuturaHeavy';
+  font-size: 3em;
+  margin-top: 40vh;
+}
+@media screen and (max-width: 760px) {
+  html body .loading-overlay p {
+    font-size: 2em;
+  }
+}
 html body .navbar .navbar-show {
   right: 0 !important;
 }
@@ -140,7 +163,7 @@ html body .elfestival .box h1 {
   font-weight: 600;
   font-size: 6vw;
   padding-top: 25vh;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   overflow: visible;
 }
 @media screen and (max-width: 760px) {
@@ -181,7 +204,7 @@ html body .elfestival .right-illus {
   html body .elfestival .left-illus,
   html body .welcome .right-illus,
   html body .elfestival .right-illus {
-    opacity: 0.1;
+    opacity: 0.1 !important;
   }
 }
 html body .welcome .left-illus,
@@ -244,7 +267,7 @@ html body .cronograma .right-illus {
 @media screen and (max-width: 920px) {
   html body .cronograma .left-illus,
   html body .cronograma .right-illus {
-    opacity: 0.1;
+    opacity: 0.1 !important;
   }
 }
 html body .cronograma .left-illus {
@@ -306,7 +329,7 @@ html body .invitades .right-illus {
 @media screen and (max-width: 920px) {
   html body .invitades .left-illus,
   html body .invitades .right-illus {
-    opacity: 0.1;
+    opacity: 0.1 !important;
   }
 }
 html body .invitades .left-illus {
@@ -359,7 +382,7 @@ html body .exposiciones .right-illus {
 @media screen and (max-width: 920px) {
   html body .exposiciones .left-illus,
   html body .exposiciones .right-illus {
-    opacity: 0.1;
+    opacity: 0.1 !important;
   }
 }
 html body .exposiciones .left-illus {

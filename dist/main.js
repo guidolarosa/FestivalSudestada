@@ -17,5 +17,17 @@ $(document).ready(function () {
     $('.display-menu-container').click(function () {
         $('.navbar-container').toggleClass('navbar-show');
     });
+
+    // Do when all images are loaded
+
+    $(window).on("load", function () {
+        $('.loading-overlay').css({ opacity: 0 });
+        setTimeout(function () {
+            // Load AOS
+            AOS.init();
+            // Remove overlay
+            $('.loading-overlay').css({ display: "none" });
+        }, 500);
+    });
 });
 },{}]},{},[1])
