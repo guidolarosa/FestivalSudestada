@@ -1,6 +1,10 @@
-navbar
+.navbar
     .navbar-container
+        .display-menu-container
+            i.fa.fa-bars
         ul
             each val in section_titles
                 li
                     a(href="#" go=val.replace(/\s/g, "").toLowerCase())=val
+            li
+                a(href="http://festivalsudestada.com/") EDICIÓN ANTERIOR

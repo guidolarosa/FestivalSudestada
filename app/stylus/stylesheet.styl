@@ -2,6 +2,8 @@
 @import "imports/globals"
 @import "imports/fonts"
 
+mobile-breakpoint = 760px
+
 *
 	box-sizing border-box
 	margin 0px
@@ -11,14 +13,22 @@ html
 		font-family 'Futura'
 		color black
 		margin 0
-		navbar
+		overflow-x hidden
+		.navbar
+			.navbar-show
+				right 0 !important
 			.navbar-container
+				right 0
 				width 15vw
+				min-width 150px
 				background-color main-red
 				padding 10px 10px
 				position fixed
-				right 0
+				z-index 3
 				top 30%
+				transition ease-in-out 0.2s right
+				@media screen and (max-width mobile-breakpoint)
+					right -150px
 				ul
 					padding 10px
 					li
@@ -32,6 +42,20 @@ html
 							transition ease-in-out 0.2s all
 							&:hover
 								opacity 0.7
+				.display-menu-container
+					background-color main-red
+					position absolute
+					padding 10px
+					left -33px
+					top 20px
+					font-size 15px
+					opacity 0
+					transition ease-in-out 0.2s opacity
+					cursor pointer
+					@media screen and (max-width mobile-breakpoint)
+						opacity 1
+					i
+						color white
 		.section
 			padding 30px 0px 70px
 			p
@@ -45,28 +69,67 @@ html
 				width 40%
 				margin 0px 30%
 				min-width 350px
+				position relative
+				z-index 2
 				@media screen and (max-width 680px)
-					width 80%
+					width 90%
 					margin 0px 5%
 			.large-box
 				width 50%
 				margin 0px 25%
 				text-align center
 				@media screen and (max-width 680px)
-					width 80%
+					width 90%
 					margin 0px 5%
 		.welcome, .elfestival
-			h1, h2, p
-				color main-red
-			h1
-				text-align center
-				font-family 'FuturaHeavy'
-				line-height 1em
-				font-weight 600
-				font-size 3.5em
-				margin-top 15vh
-				margin-bottom 50px
-				overflow visible
+			padding-top 0px
+			.box
+				position relative
+				z-index 2
+				h1, h2, p
+					color main-red
+				h1
+					text-align center
+					font-family 'FuturaHeavy'
+					line-height 1.1em
+					font-weight 600
+					font-size 5em
+					padding-top 25vh
+					margin-bottom 50px
+					overflow visible
+					@media screen and (max-width mobile-breakpoint)
+						font-size 3.2em
+			.top-illus
+				z-index 1
+				position absolute
+				width 100vw
+				height 200px
+				background-size auto 200px
+				background-image url("img/section_welcome/top.png")
+				background-position center top
+			.left-illus, .right-illus
+				position absolute
+				top 200px
+				height 600px
+				width 50%
+				margin 0px
+				transform translateY(52px)
+				z-index 1
+				background-repeat no-repeat
+				background-size 300px
+				background-color white
+				background-blend-mode multiply
+				transition 0.2s ease-in-out opacity
+				@media screen and (max-width 920px)
+					opacity 0.1
+			.left-illus
+				left 0
+				background-image url("img/section_welcome/left.png")
+				background-position 10% top
+			.right-illus
+				right 0
+				background-image url("img/section_welcome/right.png")
+				background-position 90% top
 		.welcome
 			height 100vh
 			p
@@ -90,6 +153,28 @@ html
 				.details
 					color white
 					font-size 1em
+			.left-illus, .right-illus
+				position absolute
+				height 600px
+				width 50%
+				margin 0px
+				transform translateY(52px)
+				z-index 1
+				background-color light-blue
+				background-repeat no-repeat
+				background-size 300px
+				background-blend-mode multiply
+				transition 0.2s ease-in-out opacity
+				@media screen and (max-width 920px)
+					opacity 0.1
+			.left-illus
+				left 0
+				background-image url("img/section_cronograma/left.png")
+				background-position left top
+			.right-illus
+				right 0
+				background-image url("img/section_cronograma/right.png")
+				background-position right top
 		.invitades
 			background-color main-red
 			p
@@ -112,19 +197,67 @@ html
 					display inline-block
 					margin-top 5px
 					color white
+			.left-illus, .right-illus
+				position absolute
+				height 600px
+				width 50%
+				margin 0px
+				transform translateY(52px)
+				z-index 1
+				background-color main-red
+				background-repeat no-repeat
+				background-size 300px
+				background-blend-mode screen
+				transition 0.2s ease-in-out opacity
+				@media screen and (max-width 920px)
+					opacity 0.1
+			.left-illus
+				left 0
+				background-image url("img/section_invitades/left.png")
+				background-position left top
+			.right-illus
+				right 0
+				background-image url("img/section_invitades/right.png")
+				background-position right top
 		.feria
 			background-color dark-blue //TEMP
 			color white
+			background-image url('img/section_feria/feria_back.png')
+			background-position center
+			background-blend-mode multiply
 			.box
 				p
 					margin-bottom 25px
 		.exposiciones
 			color main-red
 			.box
+				position relative
+				display inline-block
+				z-index 2
 				h3, h4
 					font-family "FuturaHeavy"
 				p
 					margin-bottom 25px
+			.left-illus, .right-illus
+				position absolute
+				height 600px
+				width 50%
+				margin 0px
+				transform translateY(52px)
+				z-index 1
+				background-repeat no-repeat
+				background-size 300px
+				transition 0.2s ease-in-out opacity
+				@media screen and (max-width 920px)
+					opacity 0.1
+			.left-illus
+				left 0
+				background-image url("img/section_exposiciones/left.png")
+				background-position 10% top
+			.right-illus
+				right 0
+				background-image url("img/section_exposiciones/right.png")
+				background-position 90% top
 		footer
 			background-color main-purple //TEMP
 			color white
@@ -171,3 +304,6 @@ html
 								transition ease-in-out opacity 0.2s
 								&:hover
 									opacity 0.8
+								@media screen and (max-width mobile-breakpoint)
+									width 60px
+									height 60px

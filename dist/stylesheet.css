@@ -21,22 +21,34 @@ html body {
   font-family: 'Futura';
   color: #000;
   margin: 0;
+  overflow-x: hidden;
 }
-html body navbar .navbar-container {
+html body .navbar .navbar-show {
+  right: 0 !important;
+}
+html body .navbar .navbar-container {
+  right: 0;
   width: 15vw;
+  min-width: 150px;
   background-color: #fc3540;
   padding: 10px 10px;
   position: fixed;
-  right: 0;
+  z-index: 3;
   top: 30%;
+  transition: ease-in-out 0.2s right;
 }
-html body navbar .navbar-container ul {
+@media screen and (max-width: 760px) {
+  html body .navbar .navbar-container {
+    right: -150px;
+  }
+}
+html body .navbar .navbar-container ul {
   padding: 10px;
 }
-html body navbar .navbar-container ul li {
+html body .navbar .navbar-container ul li {
   list-style: none;
 }
-html body navbar .navbar-container ul li a {
+html body .navbar .navbar-container ul li a {
   display: inline-block;
   text-decoration: none;
   color: #fff;
@@ -44,8 +56,27 @@ html body navbar .navbar-container ul li a {
   font-size: 0.8em;
   transition: ease-in-out 0.2s all;
 }
-html body navbar .navbar-container ul li a:hover {
+html body .navbar .navbar-container ul li a:hover {
   opacity: 0.7;
+}
+html body .navbar .navbar-container .display-menu-container {
+  background-color: #fc3540;
+  position: absolute;
+  padding: 10px;
+  left: -33px;
+  top: 20px;
+  font-size: 15px;
+  opacity: 0;
+  transition: ease-in-out 0.2s opacity;
+  cursor: pointer;
+}
+@media screen and (max-width: 760px) {
+  html body .navbar .navbar-container .display-menu-container {
+    opacity: 1;
+  }
+}
+html body .navbar .navbar-container .display-menu-container i {
+  color: #fff;
 }
 html body .section {
   padding: 30px 0px 70px;
@@ -63,10 +94,12 @@ html body .section .box {
   width: 40%;
   margin: 0px 30%;
   min-width: 350px;
+  position: relative;
+  z-index: 2;
 }
 @media screen and (max-width: 680px) {
   html body .section .box {
-    width: 80%;
+    width: 90%;
     margin: 0px 5%;
   }
 }
@@ -77,28 +110,90 @@ html body .section .large-box {
 }
 @media screen and (max-width: 680px) {
   html body .section .large-box {
-    width: 80%;
+    width: 90%;
     margin: 0px 5%;
   }
 }
-html body .welcome h1,
-html body .elfestival h1,
-html body .welcome h2,
-html body .elfestival h2,
-html body .welcome p,
-html body .elfestival p {
+html body .welcome,
+html body .elfestival {
+  padding-top: 0px;
+}
+html body .welcome .box,
+html body .elfestival .box {
+  position: relative;
+  z-index: 2;
+}
+html body .welcome .box h1,
+html body .elfestival .box h1,
+html body .welcome .box h2,
+html body .elfestival .box h2,
+html body .welcome .box p,
+html body .elfestival .box p {
   color: #fc3540;
 }
-html body .welcome h1,
-html body .elfestival h1 {
+html body .welcome .box h1,
+html body .elfestival .box h1 {
   text-align: center;
   font-family: 'FuturaHeavy';
-  line-height: 1em;
+  line-height: 1.1em;
   font-weight: 600;
-  font-size: 3.5em;
-  margin-top: 15vh;
+  font-size: 5em;
+  padding-top: 25vh;
   margin-bottom: 50px;
   overflow: visible;
+}
+@media screen and (max-width: 760px) {
+  html body .welcome .box h1,
+  html body .elfestival .box h1 {
+    font-size: 3.2em;
+  }
+}
+html body .welcome .top-illus,
+html body .elfestival .top-illus {
+  z-index: 1;
+  position: absolute;
+  width: 100vw;
+  height: 200px;
+  background-size: auto 200px;
+  background-image: url("img/section_welcome/top.png");
+  background-position: center top;
+}
+html body .welcome .left-illus,
+html body .elfestival .left-illus,
+html body .welcome .right-illus,
+html body .elfestival .right-illus {
+  position: absolute;
+  top: 200px;
+  height: 600px;
+  width: 50%;
+  margin: 0px;
+  transform: translateY(52px);
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-color: #fff;
+  background-blend-mode: multiply;
+  transition: 0.2s ease-in-out opacity;
+}
+@media screen and (max-width: 920px) {
+  html body .welcome .left-illus,
+  html body .elfestival .left-illus,
+  html body .welcome .right-illus,
+  html body .elfestival .right-illus {
+    opacity: 0.1;
+  }
+}
+html body .welcome .left-illus,
+html body .elfestival .left-illus {
+  left: 0;
+  background-image: url("img/section_welcome/left.png");
+  background-position: 10% top;
+}
+html body .welcome .right-illus,
+html body .elfestival .right-illus {
+  right: 0;
+  background-image: url("img/section_welcome/right.png");
+  background-position: 90% top;
 }
 html body .welcome {
   height: 100vh;
@@ -130,6 +225,36 @@ html body .cronograma .event-container .time {
 html body .cronograma .event-container .details {
   color: #fff;
   font-size: 1em;
+}
+html body .cronograma .left-illus,
+html body .cronograma .right-illus {
+  position: absolute;
+  height: 600px;
+  width: 50%;
+  margin: 0px;
+  transform: translateY(52px);
+  z-index: 1;
+  background-color: #36b1f4;
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-blend-mode: multiply;
+  transition: 0.2s ease-in-out opacity;
+}
+@media screen and (max-width: 920px) {
+  html body .cronograma .left-illus,
+  html body .cronograma .right-illus {
+    opacity: 0.1;
+  }
+}
+html body .cronograma .left-illus {
+  left: 0;
+  background-image: url("img/section_cronograma/left.png");
+  background-position: left top;
+}
+html body .cronograma .right-illus {
+  right: 0;
+  background-image: url("img/section_cronograma/right.png");
+  background-position: right top;
 }
 html body .invitades {
   background-color: #fc3540;
@@ -163,9 +288,42 @@ html body .invitades .invitade-container .time_place {
   margin-top: 5px;
   color: #fff;
 }
+html body .invitades .left-illus,
+html body .invitades .right-illus {
+  position: absolute;
+  height: 600px;
+  width: 50%;
+  margin: 0px;
+  transform: translateY(52px);
+  z-index: 1;
+  background-color: #fc3540;
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-blend-mode: screen;
+  transition: 0.2s ease-in-out opacity;
+}
+@media screen and (max-width: 920px) {
+  html body .invitades .left-illus,
+  html body .invitades .right-illus {
+    opacity: 0.1;
+  }
+}
+html body .invitades .left-illus {
+  left: 0;
+  background-image: url("img/section_invitades/left.png");
+  background-position: left top;
+}
+html body .invitades .right-illus {
+  right: 0;
+  background-image: url("img/section_invitades/right.png");
+  background-position: right top;
+}
 html body .feria {
   background-color: #021c91;
   color: #fff;
+  background-image: url("img/section_feria/feria_back.png");
+  background-position: center;
+  background-blend-mode: multiply;
 }
 html body .feria .box p {
   margin-bottom: 25px;
@@ -173,12 +331,45 @@ html body .feria .box p {
 html body .exposiciones {
   color: #fc3540;
 }
+html body .exposiciones .box {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+}
 html body .exposiciones .box h3,
 html body .exposiciones .box h4 {
   font-family: "FuturaHeavy";
 }
 html body .exposiciones .box p {
   margin-bottom: 25px;
+}
+html body .exposiciones .left-illus,
+html body .exposiciones .right-illus {
+  position: absolute;
+  height: 600px;
+  width: 50%;
+  margin: 0px;
+  transform: translateY(52px);
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: 300px;
+  transition: 0.2s ease-in-out opacity;
+}
+@media screen and (max-width: 920px) {
+  html body .exposiciones .left-illus,
+  html body .exposiciones .right-illus {
+    opacity: 0.1;
+  }
+}
+html body .exposiciones .left-illus {
+  left: 0;
+  background-image: url("img/section_exposiciones/left.png");
+  background-position: 10% top;
+}
+html body .exposiciones .right-illus {
+  right: 0;
+  background-image: url("img/section_exposiciones/right.png");
+  background-position: 90% top;
 }
 html body footer {
   background-color: #32006f;
@@ -234,4 +425,10 @@ html body footer .section .bottom-footer-section .large-box a .footer-logo {
 }
 html body footer .section .bottom-footer-section .large-box a .footer-logo:hover {
   opacity: 0.8;
+}
+@media screen and (max-width: 760px) {
+  html body footer .section .bottom-footer-section .large-box a .footer-logo {
+    width: 60px;
+    height: 60px;
+  }
 }
