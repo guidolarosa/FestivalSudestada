@@ -5,7 +5,7 @@ footer
                 h1.section-title=site_data.title
                 each val in site_data.date
                     p=val
-                a(href="mailto:" + site_data.mail)=site_data.mail
+                a.mail(href="mailto:" + site_data.mail)=site_data.mail
         .bottom-footer-section
             .large-box
                 each val in footer.footer_images.logos

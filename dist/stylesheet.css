@@ -29,8 +29,8 @@ html body .navbar .navbar-show {
 html body .navbar .navbar-container {
   right: 0;
   width: 15vw;
-  min-width: 150px;
   background-color: #fc3540;
+  min-width: 150px;
   padding: 10px 10px;
   position: fixed;
   z-index: 3;
@@ -40,6 +40,7 @@ html body .navbar .navbar-container {
 @media screen and (max-width: 760px) {
   html body .navbar .navbar-container {
     right: -150px;
+    border-bottom: 2px solid #fff;
   }
 }
 html body .navbar .navbar-container ul {
@@ -93,7 +94,7 @@ html body .section .section-title {
 html body .section .box {
   width: 40%;
   margin: 0px 30%;
-  min-width: 350px;
+  min-width: 200px;
   position: relative;
   z-index: 2;
 }
@@ -137,7 +138,7 @@ html body .elfestival .box h1 {
   font-family: 'FuturaHeavy';
   line-height: 1.1em;
   font-weight: 600;
-  font-size: 5em;
+  font-size: 6vw;
   padding-top: 25vh;
   margin-bottom: 50px;
   overflow: visible;
@@ -145,7 +146,7 @@ html body .elfestival .box h1 {
 @media screen and (max-width: 760px) {
   html body .welcome .box h1,
   html body .elfestival .box h1 {
-    font-size: 3.2em;
+    font-size: 2.6em;
   }
 }
 html body .welcome .top-illus,
@@ -392,7 +393,7 @@ html body footer .section .top-footer-section .large-box .section-title {
 html body footer .section .top-footer-section .large-box p {
   text-align: center;
 }
-html body footer .section .top-footer-section .large-box a {
+html body footer .section .top-footer-section .large-box .mail {
   display: inline-block;
   margin-top: 20px;
   color: #fff;
@@ -401,8 +402,13 @@ html body footer .section .top-footer-section .large-box a {
   font-size: 1.5em;
   transition: 0.2s ease-in-out all;
 }
-html body footer .section .top-footer-section .large-box a:hover {
+html body footer .section .top-footer-section .large-box .mail:hover {
   opacity: 0.8;
+}
+@media screen and (max-width: 760px) {
+  html body footer .section .top-footer-section .large-box .mail {
+    font-size: 1em;
+  }
 }
 html body footer .section .bottom-footer-section {
   margin: 0px 20px;

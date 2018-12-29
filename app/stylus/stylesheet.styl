@@ -20,8 +20,8 @@ html
 			.navbar-container
 				right 0
 				width 15vw
-				min-width 150px
 				background-color main-red
+				min-width 150px
 				padding 10px 10px
 				position fixed
 				z-index 3
@@ -29,6 +29,7 @@ html
 				transition ease-in-out 0.2s right
 				@media screen and (max-width mobile-breakpoint)
 					right -150px
+					border-bottom 2px solid white
 				ul
 					padding 10px
 					li
@@ -68,7 +69,7 @@ html
 			.box
 				width 40%
 				margin 0px 30%
-				min-width 350px
+				min-width 200px
 				position relative
 				z-index 2
 				@media screen and (max-width 680px)
@@ -93,12 +94,12 @@ html
 					font-family 'FuturaHeavy'
 					line-height 1.1em
 					font-weight 600
-					font-size 5em
+					font-size 6vw
 					padding-top 25vh
 					margin-bottom 50px
 					overflow visible
 					@media screen and (max-width mobile-breakpoint)
-						font-size 3.2em
+						font-size 2.6em
 			.top-illus
 				z-index 1
 				position absolute
@@ -275,7 +276,7 @@ html
 							font-size 1.5em
 						p
 							text-align center
-						a
+						.mail
 							display inline-block
 							margin-top 20px
 							color white
@@ -285,6 +286,8 @@ html
 							transition 0.2s ease-in-out all
 							&:hover
 								opacity 0.8
+							@media screen and (max-width mobile-breakpoint)
+								font-size 1em
 				.bottom-footer-section
 					margin 0px 20px
 					.large-box

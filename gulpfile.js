@@ -1,4 +1,5 @@
 let gulp = require('gulp');
+let browserSync = require('browser-sync').create()
 let pug = require('gulp-pug');
 let stylus = require('gulp-stylus');
 let data = require('gulp-data');
@@ -40,4 +41,12 @@ gulp.task('default', ['pug','stylus','scripts'], function()
   gulp.watch('app/data/**/*.json',['pug']);
   gulp.watch('app/stylus/**/*.styl',['stylus']);
   gulp.watch('app/js/**/*.js',['scripts']);
+});
+
+gulp.task('browser-sync', function() {
+  browserSync.init({
+      server: {
+          baseDir: "./dist"
+      }
+  });
 });
