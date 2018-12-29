@@ -22,8 +22,9 @@ $(document).ready(function()
 
     // Do when all images are loaded
 
-    $(window).on("load",function()
+    $(window).on("load",function(event)
     {
+        console.log(event);
         $('.loading-overlay').css({opacity:0})
         setTimeout(function()
         {
