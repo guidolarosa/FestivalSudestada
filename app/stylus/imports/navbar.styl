@@ -1,0 +1,43 @@
+.navbar
+    .navbar-show
+        right 0 !important
+    .navbar-container
+        right 0
+        width 15vw
+        background-color main-red
+        min-width 150px
+        padding 10px 10px
+        position fixed
+        z-index 3
+        top 30%
+        transition ease-in-out 0.2s right
+        @media screen and (max-width mobile-breakpoint)
+            right -150px
+            border-bottom 2px solid white
+        ul
+            padding 10px
+            li
+                list-style none
+                a
+                    display inline-block
+                    text-decoration none
+                    color white
+                    margin 5px 0px
+                    font-size 0.8em
+                    transition ease-in-out 0.2s all
+                    &:hover
+                        opacity 0.7
+        .display-menu-container
+            background-color main-red
+            position absolute
+            padding 10px
+            left -33px
+            top 20px
+            font-size 15px
+            opacity 0
+            transition ease-in-out 0.2s opacity
+            cursor pointer
+            @media screen and (max-width mobile-breakpoint)
+                opacity 1
+            i
+                color white

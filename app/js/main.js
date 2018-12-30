@@ -33,7 +33,7 @@ $(document).ready(function()
     setTimeout(function()
     {
         $('.loading-overlay').css({display:"none"})
-    },500)
+    },1000)
 
     // Créditos
 
