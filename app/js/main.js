@@ -20,24 +20,20 @@ $(document).ready(function()
         $('.navbar-container').toggleClass('navbar-show');
     })
 
-    // $(window).click(function()
-    // {
-    //     $('.navbar-show').toggleClass('navbar-show')
-    // })
-
     // Do when all images are loaded
 
-    $(window).on("load",function()
+    setTimeout(function()
     {
         $('.loading-overlay').css({opacity:0})
-        setTimeout(function()
-        {
-            // Load AOS
-            AOS.init();
-            // Remove overlay
-            $('.loading-overlay').css({display:"none"})
-        },500)
-    })
+        // Load AOS
+        AOS.init();
+        // Remove overlay
+    },500)
+
+    setTimeout(function()
+    {
+        $('.loading-overlay').css({display:"none"})
+    },500)
 
     // Créditos
 
