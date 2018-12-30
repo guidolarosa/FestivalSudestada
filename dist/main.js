@@ -18,6 +18,11 @@ $(document).ready(function () {
         $('.navbar-container').toggleClass('navbar-show');
     });
 
+    // $(window).click(function()
+    // {
+    //     $('.navbar-show').toggleClass('navbar-show')
+    // })
+
     // Do when all images are loaded
 
     $(window).on("load", function () {
@@ -29,5 +34,13 @@ $(document).ready(function () {
             $('.loading-overlay').css({ display: "none" });
         }, 500);
     });
+
+    // Créditos
+
+    console.log("Diseño por Pablo Picyk");
+    console.log("http://www.pablopicyk.com.ar/");
+    console.log('');
+    console.log("Desarrollo web por Guido La Rosa");
+    console.log("http://www.guidolarosa.tumblr.com");
 });
 },{}]},{},[1])
