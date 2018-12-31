@@ -327,10 +327,17 @@ html body .invitades .title {
 html body .invitades .invitade-container {
   margin-bottom: 20px;
 }
-html body .invitades .invitade-container .name {
+html body .invitades .invitade-container a {
+  text-decoration: none;
+}
+html body .invitades .invitade-container a .name {
   color: #ffe400;
   font-size: 2em;
   font-family: "FuturaHeavy";
+  transition: ease-in-out 0.2s opacity;
+}
+html body .invitades .invitade-container a .name:hover {
+  opacity: 0.8;
 }
 html body .invitades .invitade-container .type {
   color: #000;

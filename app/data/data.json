@@ -99,6 +99,7 @@
         "invitades":[
             {
                 "name":"RAFAEL COUTINHO",
+                "artist_link":"https://www.instagram.com/rafacoutinho80/?hl=en",
                 "type":"Conferencia",
                 "title":"HISTORIA BRASILEÑA ACTUAL",
                 "time":"15:30 hs",
@@ -106,18 +107,21 @@
             },
             {
                 "name":"MARIANA RUIZ JOHNSON",
+                "artist_link":"https://marianaruizjohnson.wordpress.com/",
                 "type":"Conferencia",
                 "time":"17 hs",
                 "place":"MICROCINE"
             },
             {
                 "name":"CRISTIAN TURDERA",
+                "artist_link":"http://www.cristianturdera.com/",
                 "type":"Conferencia",
                 "time":"18:30 hs",
                 "place":"MICROCINE"
             },
             {
                 "name":"CHICKS ON COMICS",
+                "artist_link":"http://chicksoncomics.blogspot.com/",
                 "type":"Conferencia",
                 "time":"20 hs",
                 "place":"MICROCINE"
@@ -164,22 +168,26 @@
                 "musarana":
                 {
                     "logo":"img/footer/logo_musa.png",
-                    "link":"http://xn--musaraalibros-nkb.com/index.html"
+                    "link":"http://xn--musaraalibros-nkb.com/index.html",
+                    "alt":"Musaraña Productora"
                 },
                 "mecenazgo":
                 {
                     "logo":"img/footer/logo_mece.png",
-                    "link":"http://www.buenosaires.gob.ar/cultura/impulsocultural/mecenazgo"
+                    "link":"http://www.buenosaires.gob.ar/cultura/impulsocultural/mecenazgo",
+                    "alt":"Mecenazgo Cultural"
                 },
                 "ccr":
                 {
                     "logo":"img/footer/logo_ccr.png",
-                    "link":"http://www.centroculturalrecoleta.org/"
+                    "link":"http://www.centroculturalrecoleta.org/",
+                    "alt":"Centro Cultural Recoleta"
                 },
                 "cynar":
                 {
                     "logo":"img/footer/logo_cynar.png",
-                    "link":"https://www.facebook.com/CynarArg/"
+                    "link":"https://www.facebook.com/CynarArg/",
+                    "alt":"Cynar"
                 }
             }
         }

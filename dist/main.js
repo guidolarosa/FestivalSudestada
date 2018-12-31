@@ -6,7 +6,6 @@ $(document).ready(function () {
 
     $('.navbar a').click(function () {
         let target = $(this)[0].attributes[1].nodeValue;
-        console.log(target);
         $([document.documentElement, document.body]).animate({
             scrollTop: $("." + target).offset().top
         }, 1000);

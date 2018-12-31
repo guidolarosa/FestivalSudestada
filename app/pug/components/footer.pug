@@ -6,9 +6,9 @@ footer
                 each val in site_data.date
                     p=val
                 a.mail(
-                    href="mailto:" + site_data.mail)=site_data.mail
+                    href="mailto:" + site_data.mail, title="Envianos un e-mail")=site_data.mail
         .bottom-footer-section
             .large-box
                 each val in footer.footer_images.logos
                     a(href=val.link)
-                        .footer-logo(style="background-image: url('" + val.logo + "')")
+                        .footer-logo(style="background-image: url('" + val.logo + "')" title= val.alt)
