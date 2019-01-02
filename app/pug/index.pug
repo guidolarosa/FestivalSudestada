@@ -43,7 +43,7 @@ html
             p=val
           each val in section_invitades.invitades
             .invitade-container(data-aos="fade-up")
-              a(href="val.artist_link", title="Ir a sitio web del artista")
+              a(href=val.artist_link, title="Ir a sitio web del artista")
                 h3.name=val.name
               h5.type=val.type
               if (val.title)
