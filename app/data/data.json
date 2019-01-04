@@ -5,7 +5,8 @@
         "date":
         [
             "26 ENERO 2019",
-            "CENTRO CULTURAL RECOLETA"
+            "CENTRO CULTURAL RECOLETA",
+            "DE 15 A 21 HS."
         ],
         "mail":"info@festivalsudestada.com"
     },
@@ -13,9 +14,8 @@
     {
         "title":"EL FESTIVAL",
         "text":[
-            "Nacido en 2014 como feria colectiva de dibujo e ilustración en Casa Florida Galería, y producido por Musaraña Productora, el Festival Sudestada de Dibujo e Ilustración abre una ventanita en la ciudad de Buenos Aires para generar nuevos puentes y espacios dentro de la pujante industria cultural del dibujo y la ilustración.",
-            "Festival Sudestada quiere ser un punto de encuentro anual entre profesionales, estudiantes y el público en general con el mundo de la ilustración, el dibujo y las artes gráficas, así como también convertirse en un foro profesional para la difusión y el intercambio.",
-            "Siendo conscientes del alto nivel profesional e histórico de nuestra región, vemos en los ilustradores y dibujantes actuales un gran desarrollo profesional, muchísimo talento y empuje y estamos atentos a una nueva ola, un gran viento, una fuerza artística que busca y precisa de canales para instalarse como una industria cultural robusta, sana y permanente."
+            "El Festival Sudestada de dibujo e ilustración vuelve, resiste y se sostiene como una fecha central en la ciudad de Buenos Aires para el encuentro entre los profesionales de la industria cultural del dibujo y la ilustración, y su público en general.",
+            "Como en su <a href='http://festivalsudestada.com/'>primera edición en 2017</a>, el festival estará centrado en tres ejes principales: las conferencias de nuestrxs invitadxs, donde grandes referentes dan cuenta de su labor profesional; la feria editorial, que reúne gran parte del momento actual de la producción gráfica, y las exposiciones, que en este caso dan cuenta de dos espacios muy distintos: el universo del pattern, donde la ilustración muestra su habilidad para expandirse en cualquier superficie y evidencia su potencia en el mundo del diseño industrial; y la historieta en su cara más experimental, a través de un inédito encuentro entre doce artistas referentes de Argentina y Brasil que expanden el camino plástico y narrativo de la historieta contemporánea."
         ]
     },
     "section_cronograma":
@@ -27,7 +27,7 @@
                 "time":"15 hs",
                 "details":
                 [
-                    "Apertura del Festival y de la Feria de publicaciones de ilustración, historietas, diseñoliteratura infanto-juvenil y fanzines de autores independientes (Patio de los Naranjos)"
+                    "Apertura del Festival y de la Feria de publicaciones de ilustración, historietas, diseño, literatura infanto-juvenil y fanzines de autores independientes (Patio de los Naranjos)"
                 ]
             },
             {
@@ -43,7 +43,7 @@
                 "details":
                 [
                     "Taller de historietas para niñ@s de 7 a 11 años",
-                    "por Banda Dibujada"
+                    "por Banda Dibujada (Sala de dibujo)"
                 ]
             },
             {
@@ -90,10 +90,10 @@
     },
     "section_invitades":
     {
-        "title":"INVITADES",
+        "title":"INVITADXS",
         "text": [
-            "En ésta segunda edición de Festival Sudestada contamos con la presencia de cuatro invitades de lujo.",
-            "A lo largo de la jornada cada invitade haría una presentación de 45 minutos en la que contarán al público cómo llevan a cabo una tarea de su ámbito profesional basándose en casos concretos. Luego de cada presentación habrá 30 muinutos para las preguntas del público.",
+            "En ésta segunda edición de Festival Sudestada contamos con la presencia de cuatro invitadxs de lujo.",
+            "A lo largo de la jornada cada invitade hará una presentación de 45 minutos en la que contarán al público cómo llevan a cabo una tarea de su ámbito profesional basándose en casos concretos. Luego de cada presentación habrá 30 muinutos para las preguntas del público.",
             "La entrada es libre y gratuita"
         ],
         "invitades":[
@@ -109,6 +109,7 @@
                 "name":"MARIANA RUIZ JOHNSON",
                 "artist_link":"https://marianaruizjohnson.wordpress.com/",
                 "type":"Conferencia",
+                "title":"LA ARTISTA POR SI MISMA",
                 "time":"17 hs",
                 "place":"MICROCINE"
             },
@@ -116,6 +117,7 @@
                 "name":"CRISTIAN TURDERA",
                 "artist_link":"http://www.cristianturdera.com/",
                 "type":"Conferencia",
+                "title":"EL ARTISTA POR SI MISMO",
                 "time":"18:30 hs",
                 "place":"MICROCINE"
             },
@@ -123,6 +125,7 @@
                 "name":"CHICKS ON COMICS",
                 "artist_link":"http://chicksoncomics.blogspot.com/",
                 "type":"Conferencia",
+                "title":"LAS ARTISTAS POR SI MISMAS",
                 "time":"20 hs",
                 "place":"MICROCINE"
             }
@@ -133,7 +136,7 @@
         "title":"FERIA",
         "text":
         [
-            "Podrás encontrar en esta feria de editoriales muchos de los sellos más importantes del país que trabajan en torno al dibujo y la ilustración. Literatura infanto juvenil, clásicos ilustrados, humor gráfico e historieta.",
+            "Espacio para encontrar lo más relevante y novedoso de la efervescente escena gráfica actual en formato publicación: revistas, libros, fanzines, láminas, calcos, serigrafías, impresiones, risografías y más, alrededor de la ilustración, las historietas, el diseño, el humor gráfico y los libros-álbum para todos los públicos. Desde las más recientes voces a los consagrados autores clásicos, desde los diseños y tamaños tradicionales a los arriesgados proyectos independientes que renuevan y estallan los formatos. Desde pequeñas editoriales autogestivas a colectivos de artistas y librerías especializadas que son referentes del mercado. Para bucear, indagar, descubrir, experimentar, sorprenderse y alegrarse.",
             "Calibroscopio, AH Pípala, Flamboyant, Zorro Rojo, Arte a Babor, Limonero, Niño, Ojoreja, Pequeño Editor, Periplo, Muchas Nueces, Editorial Municipal de Rosario, Festival Furioso, Galería, Hotel de las Ideas, Loco Rabia, Maten al mensajero, Moebius, Musaraña Editora, Moria Galería, Tren en movimiento, Wai Comics, La Pinta, Barro, Estudio Maffia, Proyecto Piraña y más."
         ]
     },
@@ -145,6 +148,7 @@
             {
                 "title":"ESTAMPAR EL MUNDO",
                 "text":"La ilustración abre camino, sale del papel y avanza sobre nuevas superficies. Textiles, empapelados y hasta objetos son los nuevos soportes y el protagonista es el pattern ilustrado. Nueve ilustradores argentinos empapelan las columnas de las Salas presentando este nuevo universo del pattern en técnicas, estilos, temáticas y escalas diversas.",
+                "place":"SALA 1 - COWORKING",
                 "subtitle":"ARTISTAS",
                 "artist_list":"Juliana Pedemonte, Sol Linero, Gabriela Regina, Laura Varsky, Ángela Corti, Ana Sanfelippo, Marcos Farina, Maria Elina Mendez y Mariana Pupé Pereyra.",
                 "footer":"CURADURÍA Festival Sudestada"
@@ -152,6 +156,7 @@
             {
                 "title":"PUENTE - HISTORIETA EXPERIMENTAL DE ARGENTINA Y BRASIL",
                 "text":"En la historieta contemporánea existen nuevxs actores que empujan los límites establecidos y quiebran la viñeta tradicional con búsquedas plásticas y narrativas. Esta exposición propone un puente desde y hacia la historieta, y entre los diversos lenguajes de experimentación gráfica de Argentina y Brasil, dos vecinos en plena expansión creativa, con infinitos puntos de conexión, que la mayoría de las veces apenas se tocan. Un puente para salvar obstáculos de comunicación entre artistas de nuestra vecindad cultural.",
+                "place":"SALA 2 - COWORKING",
                 "subtitle":"ARTISTAS",
                 "artist_list":"Mateus Acioli, Adonis, Julia Balthazar, Julia Barata, Muriel Bellini, Denny Chang, El Waibe, Juan Narowe, No tan parecidos, Puiupo, Iván Riskin, Un Faulduo.",
                 "footer":"CURADORES Rafael Coutinho y Alejandro Bidegaray."

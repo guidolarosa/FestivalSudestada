@@ -9,6 +9,10 @@
   src: url("fonts/futura_heavy.ttf") format('truetype');
 }
 @font-face {
+  font-family: FuturaExtraHeavy;
+  src: url("fonts/futuraExtraHeavy.ttf") format('truetype');
+}
+@font-face {
   font-family: Neutraface;
   src: url("fonts/NeutraTextTF-DemSC.otf") format("opentype");
   src: url("fonts/NeutraTextTF-DemSC.woff") format("woff");
@@ -264,6 +268,12 @@ html body .elfestival h2 {
 html body .elfestival p {
   margin-bottom: 30px;
 }
+html body .elfestival a {
+  text-decoration: none;
+  cursor: pointer !important;
+  font-family: 'FuturaHeavy';
+  color: #fc3540;
+}
 html body .cronograma {
   background-color: #36b1f4;
 }
@@ -433,6 +443,20 @@ html body .exposiciones .right-illus {
   right: 0;
   background-image: url("img/section_exposiciones/right.png");
   background-position: 90% top;
+}
+html body .exposiciones .place {
+  font-family: 'FuturaHeavy';
+  color: #36b1f4;
+}
+html body .quienes-somos {
+  background-color: #021c91;
+}
+html body .quienes-somos .box h2 {
+  color: #36b1f4;
+}
+html body .quienes-somos .box p {
+  color: #fff;
+  margin-bottom: 25px;
 }
 html body footer {
   background-color: #32006f;

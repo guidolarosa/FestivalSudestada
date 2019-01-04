@@ -22,8 +22,10 @@ html
       .section.elfestival
         .box
           h2.section-title(data-aos="fade-up")=section_festival.title
-          each val in section_festival.text
-            p(data-aos="fade-up")=val
+          p(data-aos="fade-up").
+            El Festival Sudestada de dibujo e ilustración vuelve, resiste y se sostiene como una fecha central en la ciudad de Buenos Aires para el encuentro entre los profesionales de la industria cultural del dibujo y la ilustración, y su público en general.
+          p(data-aos="fade-up").
+            Como en su #[a(href="http://festivalsudestada.com/edicion_2017") primera edición en 2017], el festival estará centrado en tres ejes principales: las conferencias de nuestrxs invitadxs, donde grandes referentes dan cuenta de su labor profesional; la feria editorial, que reúne gran parte del momento actual de la producción gráfica, y las exposiciones, que en este caso dan cuenta de dos espacios muy distintos: el universo del pattern, donde la ilustración muestra su habilidad para expandirse en cualquier superficie y evidencia su potencia en el mundo del diseño industrial; y la historieta en su cara más experimental, a través de un inédito encuentro entre doce artistas referentes de Argentina y Brasil que expanden el camino plástico y narrativo de la historieta contemporánea.
       .section.cronograma
         .left-illus(data-aos="fade" data-aos-delay="500")
         .right-illus(data-aos="fade" data-aos-delay="1000")
@@ -62,8 +64,16 @@ html
           each val in section_exposiciones.exposiciones
             h3(data-aos="fade-up")=val.title
             p(data-aos="fade-up")=val.text
+            p(data-aos="fade-up").place=val.place
             h4(data-aos="fade-up")=val.subtitle
             p(data-aos="fade-up")=val.artist_list
             p(data-aos="fade-up")=val.footer
+      .section.quienes-somos
+        .box
+          h2.section-title(data-aos="fade-up") QUIENES SOMOS
+          p(data-aos="fade-up").
+            El Festival Sudestada es construido por Angela Corti (Exposiciones), Pablo Picyk (Diseño Gráfico), Julia Bustos (Producción), Guido La Rosa (Diseño Web), Ezequiel García y Alejandro Bidegaray (Coordinación y Dirección Creativa), además de todo el equipo de producción, artística y comunicación del C.C.Recoleta.
+          p(data-aos="fade-up").
+            La gráfica de este año es obra de Pablo Besse.
     include components/footer.pug
     script(src="main.js")
