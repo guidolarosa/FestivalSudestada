@@ -3,8 +3,6 @@
 @import "imports/fonts"
 @import "imports/pace"
 
-
-
 *
 	box-sizing border-box
 	margin 0px
@@ -51,15 +49,13 @@ html
 					color main-red
 				h1
 					text-align center
-					font-family 'FuturaHeavy'
-					line-height 1.1em
-					font-weight 600
-					font-size 6vw
 					padding-top 25vh
-					margin-bottom 20px
-					overflow visible
-					@media screen and (max-width mobile-breakpoint)
-						font-size 2.6em
+					font-family 'FuturaHeavy'
+					font-size 6vw
+					margin-bottom 10vh
+					line-height 1em
+					@media screen and (max-width 680px)
+						font-size 10vw
 			.top-illus
 				z-index 1
 				position absolute
@@ -71,12 +67,12 @@ html
 			.left-illus, .right-illus
 				position absolute
 				top 200px
-				height 600px
+				height 750px
 				width 50%
 				margin 0px
 				transform translateY(52px)
 				z-index 1
-				background-repeat no-repeat
+				background-repeat repeat-y
 				background-size 300px
 				background-color white
 				background-blend-mode multiply
@@ -93,6 +89,7 @@ html
 				background-position 90% top
 		.welcome
 			height 100vh
+			padding-bottom 0px
 			p
 				text-align center
 				font-size 1em
@@ -124,7 +121,7 @@ html
 				height 600px
 				width 50%
 				margin 0px
-				transform translateY(52px)
+				transform translateY(100px) !important
 				z-index 1
 				background-color light-blue
 				background-repeat no-repeat
@@ -173,7 +170,7 @@ html
 				height 600px
 				width 50%
 				margin 0px
-				transform translateY(52px)
+				transform translateY(100px) !important
 				z-index 1
 				background-color main-red
 				background-repeat no-repeat
@@ -214,7 +211,7 @@ html
 				height 600px
 				width 50%
 				margin 0px
-				transform translateY(52px)
+				transform translateY(100px) !important
 				z-index 1
 				background-repeat no-repeat
 				background-size 300px

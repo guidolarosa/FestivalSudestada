@@ -8,7 +8,7 @@
             "CENTRO CULTURAL RECOLETA",
             "DE 15 A 21 HS."
         ],
-        "mail":"info@festivalsudestada.com"
+        "mail":"sudestadailustracion@gmail.com"
     },
     "section_festival":
     {
@@ -47,6 +47,13 @@
                 ]
             },
             {
+                "time":"16:15 hs",
+                "details":
+                [
+                    "Mesa redonda con Editores. Debate sobre el estado actual de la industria (Patio de los Naranjos)"
+                ]
+            },
+            {
                 "time":"17 hs",
                 "details":
                 [
@@ -58,7 +65,8 @@
                 "time":"17:45 hs",
                 "details":
                 [
-                    "Mesa redonda con Editores. Debate sobre el estado actual de la industria (Patio de los Naranjos)"
+                    "Mesa redonda con los artistas de la exposición",
+                    "\"Estampar el Mundo\" (Patio de los Naranjos)"
                 ]
             },
             {
@@ -67,14 +75,6 @@
                 [
                     "Conferencia \"El artista por sí mismo\"",
                     "Cristian Turdera (Microcine)"
-                ]
-            },
-            {
-                "time":"19:15 hs",
-                "details":
-                [
-                    "Mesa redonda con los artistas de la exposición",
-                    "\"Estampar el Mundo\" (Patio de los Naranjos)"
                 ]
             },
             {

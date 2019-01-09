@@ -15,10 +15,11 @@ html
         .left-illus(data-aos="fade" data-aos-delay="500")
         .right-illus(data-aos="fade" data-aos-delay="800")
         .box
-          h1(data-aos="zoom-in")=site_data.title
-          h2
-            each val in site_data.date
-              p(data-aos="fade-up")=val
+          h1.title(data-aos="zoom-in")=site_data.title
+          .sub-title
+            h2
+              each val in site_data.date
+                p(data-aos="fade-up")=val
       .section.elfestival
         .box
           h2.section-title(data-aos="fade-up")=section_festival.title

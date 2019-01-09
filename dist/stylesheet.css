@@ -194,18 +194,16 @@ html body .elfestival .box p {
 html body .welcome .box h1,
 html body .elfestival .box h1 {
   text-align: center;
-  font-family: 'FuturaHeavy';
-  line-height: 1.1em;
-  font-weight: 600;
-  font-size: 6vw;
   padding-top: 25vh;
-  margin-bottom: 20px;
-  overflow: visible;
+  font-family: 'FuturaHeavy';
+  font-size: 6vw;
+  margin-bottom: 10vh;
+  line-height: 1em;
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 680px) {
   html body .welcome .box h1,
   html body .elfestival .box h1 {
-    font-size: 2.6em;
+    font-size: 10vw;
   }
 }
 html body .welcome .top-illus,
@@ -224,12 +222,12 @@ html body .welcome .right-illus,
 html body .elfestival .right-illus {
   position: absolute;
   top: 200px;
-  height: 600px;
+  height: 750px;
   width: 50%;
   margin: 0px;
   transform: translateY(52px);
   z-index: 1;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: 300px;
   background-color: #fff;
   background-blend-mode: multiply;
@@ -257,6 +255,7 @@ html body .elfestival .right-illus {
 }
 html body .welcome {
   height: 100vh;
+  padding-bottom: 0px;
 }
 html body .welcome p {
   text-align: center;
@@ -298,7 +297,7 @@ html body .cronograma .right-illus {
   height: 600px;
   width: 50%;
   margin: 0px;
-  transform: translateY(52px);
+  transform: translateY(100px) !important;
   z-index: 1;
   background-color: #36b1f4;
   background-repeat: no-repeat;
@@ -367,7 +366,7 @@ html body .invitades .right-illus {
   height: 600px;
   width: 50%;
   margin: 0px;
-  transform: translateY(52px);
+  transform: translateY(100px) !important;
   z-index: 1;
   background-color: #fc3540;
   background-repeat: no-repeat;
@@ -422,7 +421,7 @@ html body .exposiciones .right-illus {
   height: 600px;
   width: 50%;
   margin: 0px;
-  transform: translateY(52px);
+  transform: translateY(100px) !important;
   z-index: 1;
   background-repeat: no-repeat;
   background-size: 300px;
