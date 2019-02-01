@@ -1,7 +1,7 @@
 {
-  "name": "test_1",
+  "name": "festival_sudestada",
   "version": "1.0.0",
-  "description": "Site for Brisa Health Congress",
+  "description": "Site for Festival Sudestada",
   "main": ".eslintrc.js",
   "scripts": {
     "start": "gulp browser-sync"

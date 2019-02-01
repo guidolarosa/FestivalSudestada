@@ -321,47 +321,47 @@ html body .cronograma .right-illus {
   background-image: url("img/section_cronograma/right.png");
   background-position: right top;
 }
-html body .invitades {
+html body .invitadxs {
   background-color: #fc3540;
 }
-html body .invitades p {
+html body .invitadxs p {
   margin-bottom: 25px;
   font-size: 0.9em;
 }
-html body .invitades h2,
-html body .invitades p,
-html body .invitades .title {
+html body .invitadxs h2,
+html body .invitadxs p,
+html body .invitadxs .title {
   color: #fff;
 }
-html body .invitades .invitade-container {
+html body .invitadxs .invitade-container {
   margin-bottom: 20px;
 }
-html body .invitades .invitade-container a {
+html body .invitadxs .invitade-container a {
   text-decoration: none;
 }
-html body .invitades .invitade-container a .name {
+html body .invitadxs .invitade-container a .name {
   color: #ffe400;
   font-size: 2em;
   font-family: "FuturaHeavy";
   transition: ease-in-out 0.2s opacity;
 }
-html body .invitades .invitade-container a .name:hover {
+html body .invitadxs .invitade-container a .name:hover {
   opacity: 0.8;
 }
-html body .invitades .invitade-container .type {
+html body .invitadxs .invitade-container .type {
   color: #000;
 }
-html body .invitades .invitade-container .title {
+html body .invitadxs .invitade-container .title {
   font-family: "FuturaHeavy";
   font-size: 1.5em;
 }
-html body .invitades .invitade-container .time_place {
+html body .invitadxs .invitade-container .time_place {
   display: inline-block;
   margin-top: 5px;
   color: #fff;
 }
-html body .invitades .left-illus,
-html body .invitades .right-illus {
+html body .invitadxs .left-illus,
+html body .invitadxs .right-illus {
   position: absolute;
   height: 600px;
   width: 50%;
@@ -375,17 +375,17 @@ html body .invitades .right-illus {
   transition: 0.2s ease-in-out opacity;
 }
 @media screen and (max-width: 920px) {
-  html body .invitades .left-illus,
-  html body .invitades .right-illus {
+  html body .invitadxs .left-illus,
+  html body .invitadxs .right-illus {
     opacity: 0.1 !important;
   }
 }
-html body .invitades .left-illus {
+html body .invitadxs .left-illus {
   left: 0;
   background-image: url("img/section_invitades/left.png");
   background-position: left top;
 }
-html body .invitades .right-illus {
+html body .invitadxs .right-illus {
   right: 0;
   background-image: url("img/section_invitades/right.png");
   background-position: right top;
